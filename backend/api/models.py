@@ -1,3 +1,13 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Create your models here.
+class Review(models.Model):
+    review_content = models.CharField(max_length = 200)
+    created_at = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(User, on_delete = models.CASCADE, related_name="reviews")
+    rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)]) #number between 1-5
+    game_id = models.CharField(max_length= 100)
+
+    def __str__(self):
+        return self.review_content
