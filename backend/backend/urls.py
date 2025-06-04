@@ -9,5 +9,5 @@ urlpatterns = [
     path("api/token/", TokenObtainPairView.as_view(), name="get_token"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="refresh"),
     path("api-auth/", include("rest_framework.urls")), # link all of the prebuilt urls from the rest_framework
-    # path("api/", include("api.urls")), #include all of the urls from the urls.py in the api folder
+    path("api/", include("api.urls")), #include all of the urls from the urls.py in the api folder
 ]

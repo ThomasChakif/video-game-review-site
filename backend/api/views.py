@@ -10,3 +10,26 @@ class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
+
+class ReviewListCreate(generics.ListCreateAPIView):
+    serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]
+
+    # get the 10 most recent reviews for a game
+    def get_queryset(self):
+        return Review.objects.order_by('created_at')[:10]
+    
+    def perform_create(self, serializer):
+        if serializer.is_valid():
+            serializer.save(author=self.request.user)
+        else:
+            print(serializer.errors)
+
+class ReviewDelete(generics.DestroyAPIView):
+    serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        user = self.request.user
+        return Review.objects.filter(author=user)
+    
