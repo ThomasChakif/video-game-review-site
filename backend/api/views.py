@@ -16,8 +16,10 @@ class ReviewListCreate(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
 
     # get the 10 most recent reviews for a game
+    # we make sure to only get the reviews of the game selected
     def get_queryset(self):
-        return Review.objects.order_by('created_at')[:10]
+        gameID = self.kwargs['game_id']
+        return Review.objects.filter(game_id=gameID).order_by('created_at')[:10]
     
     def perform_create(self, serializer):
         if serializer.is_valid():

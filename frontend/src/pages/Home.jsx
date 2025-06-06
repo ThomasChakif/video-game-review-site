@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 import '../styles/Home.css'
@@ -58,18 +57,6 @@ function Home() {
                 <button 
                     className = 'game-button'
                     onClick={() => navigate(`/game/${game.game_id}`)}
-                    style={{
-                        color: 'black',
-                        fontSize: '1.5rem',
-                        fontWeight: 'bold',
-                        margin: 0,
-                        letterSpacing: '0.5px',
-                        background: 'white',
-                        borderRadius:'20px',
-                        borderColor: 'white',
-                        borderStyle: 'solid',
-                        textAlign: 'center'
-                    }}
                 />
                 </Grid>
             ))}

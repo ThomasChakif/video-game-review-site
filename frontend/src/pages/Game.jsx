@@ -11,15 +11,17 @@ function Game() {
 
 
     const getReviews = () => {
-        api.get("/api/reviews/")
+        api.get(`/api/reviews/${gameID}/`)
         .then((res) => res.data)
         .then((data) => {setReviews(data)})
         .catch((err) => alert(err))
     }
 
     useEffect(() => {
-        getReviews()
-    }, [])
+        if(gameID){
+            getReviews()
+        }
+    }, [gameID])
     
 
     useEffect(() => {
