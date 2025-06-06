@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react"
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
 import '../styles/Home.css'
 import massEffect2Cover from '../img/MassEffect2_cover.PNG';
 
 function Home() {
 
     const [gameData, setGameData] = useState([])
+    const navigate = useNavigate()
 
     const imageMap = {
         "1": massEffect2Cover
@@ -43,7 +41,8 @@ function Home() {
                     borderColor: 'white',
                     borderStyle: 'solid',
                     width: "300px"
-                }}> <p style={{
+                }}>
+                <p style={{
                         color: 'black',
                         fontSize: '1.5rem',
                         fontWeight: 'bold',
@@ -55,7 +54,23 @@ function Home() {
                         borderStyle: 'solid',
                         textAlign: 'center'
                     }}>{game.game_name}
-                    </p>
+                </p>
+                <button 
+                    className = 'game-button'
+                    onClick={() => navigate(`/game/${game.game_id}`)}
+                    style={{
+                        color: 'black',
+                        fontSize: '1.5rem',
+                        fontWeight: 'bold',
+                        margin: 0,
+                        letterSpacing: '0.5px',
+                        background: 'white',
+                        borderRadius:'20px',
+                        borderColor: 'white',
+                        borderStyle: 'solid',
+                        textAlign: 'center'
+                    }}
+                />
                 </Grid>
             ))}
         </Grid>
