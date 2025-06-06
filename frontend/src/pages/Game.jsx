@@ -1,11 +1,25 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import api from "../api"
 
 function Game() {
 
     const {gameID} = useParams()
     const [gameData, setGameData] = useState([])
     const [game, setGame] = useState(null)
+    const [reviews, setReviews] = useState([])
+
+
+    const getReviews = () => {
+        api.get("/api/reviews/")
+        .then((res) => res.data)
+        .then((data) => {setReviews(data)})
+        .catch((err) => alert(err))
+    }
+
+    useEffect(() => {
+        getReviews()
+    }, [])
     
 
     useEffect(() => {
@@ -31,6 +45,9 @@ function Game() {
     return (
         <div>
             <h1>{game.game_name}</h1>
+            {reviews.map((review) => {
+               return <p>{review.review_content}</p>
+            })}
         </div>
     )
 }
