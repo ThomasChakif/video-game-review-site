@@ -45,10 +45,20 @@ function Game() {
     }
 
     return (
-        <div>
+        <div style={{marginLeft: '1rem'}}>
             <h1>{game.game_name}</h1>
+            <h2>Publisher: {game.publisher}</h2>
+            <h2>Released on {game.release_date}</h2>
+            <h3>{game.game_description}</h3>
             {reviews.map((review) => {
-               return <p>{review.review_content}</p>
+               return (
+                <div>
+                    <p>Author: {review.author}</p>
+                    <p>Content: {review.review_content}</p>
+                    <p>Rating: {review.rating}.0 / 5.0</p>
+                    <p>---------------------</p>
+                </div>
+               )
             })}
         </div>
     )

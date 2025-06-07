@@ -13,7 +13,9 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
 class ReviewSerializer(serializers.ModelSerializer):
+    # we get the author's username so that we can display it with every review on the site
+    author = serializers.CharField(source='author.username', read_only = True) 
+
     class Meta:
         model = Review
         fields = ["id", "review_content", "created_at", "author", "rating", "game_id"]
-        extra_kwargs = {"author": {"read_only": True}}
