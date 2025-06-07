@@ -1,16 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/arcade-classic');
                 
-.test:hover{
+.game-card:hover{
  transform: translateY(-10px);
 }
 
-.test{
+.game-card{
      transition: 0.3s ease;
-     /* filter: brightness(0.9); */
+     filter: brightness(0.8);
 }
 
 .page{
-     background-image: url('../img/space_background.jpeg');
+     background-color: black;
 }
 
 body{
@@ -19,4 +19,28 @@ body{
 
 .game-titles{
      font-family: 'ArcadeClassic', sans-serif;
+     color: white;
+     font-size: 2rem;
+     font-weight: bolder;
+     margin: 0;
+     letter-spacing: 0.5px;
+     text-align: center;
+     margin-top: 1rem;
+}
+
+.game-button {
+     font-family: 'ArcadeClassic', sans-serif;
+     margin: 27rem auto 0 auto;
+     display: block;
+     font-size: 1.5rem;
+     border-radius: 15px;
+     border-color: white;
+     color: black;
+     background-color: white;
+     transition: 0.2s ease;
+}
+
+.game-button:hover {
+     color: white;
+     background-color: black;
 }

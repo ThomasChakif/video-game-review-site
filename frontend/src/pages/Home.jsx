@@ -28,18 +28,9 @@ function Home() {
             }}>
             {gameData.map((game) => (
                 <div>
-                <p className = 'game-titles' 
-                    style={{
-                        color: 'white',
-                        fontSize: '2rem',
-                        fontWeight: 'bolder',
-                        margin: 0,
-                        letterSpacing: '0.5px',
-                        textAlign: 'center',
-                        marginTop: '1rem',
-                    }}>{game.game_name}
+                <p className = 'game-titles'>{game.game_name}
                 </p>
-                <Grid className = 'test' item key={game.game_id} 
+                <Grid className = 'game-card' item key={game.game_id} 
                 sx={{ 
                     backgroundImage:`url(${imageMap[game.game_id]})`,
                     backgroundRepeat: "no-repeat",
@@ -55,8 +46,9 @@ function Home() {
                 }}>
                 <button 
                     className = 'game-button'
-                    onClick={() => navigate(`/game/${game.game_id}`)}
-                />
+                    onClick={() => navigate(`/game/${game.game_id}`)}>
+                        VISIT PAGE
+                    </button>
                 </Grid>
                  </div>
             ))}
