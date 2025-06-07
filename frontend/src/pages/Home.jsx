@@ -27,6 +27,18 @@ function Home() {
                 alignItems: "center"
             }}>
             {gameData.map((game) => (
+                <div>
+                <p className = 'game-titles' 
+                    style={{
+                        color: 'white',
+                        fontSize: '2rem',
+                        fontWeight: 'bolder',
+                        margin: 0,
+                        letterSpacing: '0.5px',
+                        textAlign: 'center',
+                        marginTop: '1rem',
+                    }}>{game.game_name}
+                </p>
                 <Grid className = 'test' item key={game.game_id} 
                 sx={{ 
                     backgroundImage:`url(${imageMap[game.game_id]})`,
@@ -35,30 +47,18 @@ function Home() {
                     backgroundPosition: "center",
                     height: "500px",
                     postition: "relative",
-                    margin: "6rem", //need margin for proper row spacing
-                    borderRadius:'20px',
+                    margin: "1rem 2rem 2rem 2rem", //need margin for proper row spacing
+                    borderRadius:'10px',
                     borderColor: 'white',
                     borderStyle: 'solid',
                     width: "300px"
                 }}>
-                <p style={{
-                        color: 'black',
-                        fontSize: '1.5rem',
-                        fontWeight: 'bold',
-                        margin: 0,
-                        letterSpacing: '0.5px',
-                        background: 'white',
-                        borderRadius:'20px',
-                        borderColor: 'white',
-                        borderStyle: 'solid',
-                        textAlign: 'center'
-                    }}>{game.game_name}
-                </p>
                 <button 
                     className = 'game-button'
                     onClick={() => navigate(`/game/${game.game_id}`)}
                 />
                 </Grid>
+                 </div>
             ))}
         </Grid>
     </div>
