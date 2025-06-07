@@ -2,12 +2,22 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import api from "../api"
 
+
 function Game() {
 
     const {gameID} = useParams()
     const [gameData, setGameData] = useState([])
     const [game, setGame] = useState(null)
     const [reviews, setReviews] = useState([])
+    const [average, setAverage] = useState(0)
+
+
+    const getAverage = () => {
+        api.get(`/api/reviews/average-rating/${gameID}/`)
+        .then((res) => res.data)
+        .then((data) => {setAverage(data.avg)})
+        .catch((err) => alert(err))
+    }
 
 
     const getReviews = () => {
@@ -20,6 +30,7 @@ function Game() {
     useEffect(() => {
         if(gameID){
             getReviews()
+            getAverage()
         }
     }, [gameID])
     
@@ -50,6 +61,7 @@ function Game() {
             <h2>Publisher: {game.publisher}</h2>
             <h2>Released on {game.release_date}</h2>
             <h3>{game.game_description}</h3>
+            <h3>Average rating: {average.toFixed(2)}</h3>
             {reviews.map((review) => {
                return (
                 <div>

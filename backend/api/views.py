@@ -4,6 +4,9 @@ from rest_framework import generics
 from .serializers import UserSerializer, ReviewSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Review
+from django.db.models import Avg
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 
 class CreateUserView(generics.CreateAPIView):
@@ -34,4 +37,11 @@ class ReviewDelete(generics.DestroyAPIView):
     def get_queryset(self):
         user = self.request.user
         return Review.objects.filter(author=user)
+    
+class GetAverage(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, game_id):
+        avg_rating = Review.objects.filter(game_id=game_id).aggregate(avg=Avg('rating')) #we return the obkect so that avg_rating = {avg: '2.66'}
+        return Response(avg_rating) # we return in a response so that we serialize the return info correctly into json
     
