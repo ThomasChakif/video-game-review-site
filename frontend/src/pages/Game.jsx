@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import api from "../api"
 import '../styles/Game.css'
-
+import GameInfo from '../components/GameInfo'
 
 function Game() {
 
@@ -10,16 +10,6 @@ function Game() {
     const [gameData, setGameData] = useState([])
     const [game, setGame] = useState(null)
     const [reviews, setReviews] = useState([])
-    const [average, setAverage] = useState(0)
-
-
-    const getAverage = () => {
-        api.get(`/api/reviews/average-rating/${gameID}/`)
-        .then((res) => res.data)
-        .then((data) => {setAverage(data.avg)})
-        .catch((err) => alert(err))
-    }
-
 
     const getReviews = () => {
         api.get(`/api/reviews/${gameID}/`)
@@ -31,7 +21,6 @@ function Game() {
     useEffect(() => {
         if(gameID){
             getReviews()
-            getAverage()
         }
     }, [gameID])
     
@@ -57,23 +46,8 @@ function Game() {
     }
 
     return (
-
-    <div className="page-wrap">
-        <nav className="page-nav">
-            {game.game_name}
-        </nav>
-        <main className="page-main">
-            <p>{game.game_description}</p>
-        </main>
-        <div className='page-rating'>
-            {average.toFixed(2)}
-        </div>
-            <div className='page-publisher'>
-            {game.publisher}
-        </div>
-        <aside className="page-sidebar">
-            Aside
-        </aside>
+    <div>
+        <GameInfo game={game} game_ID={gameID} key={game.game_id}/>
             {reviews.map((review) => {
                return (
                 <div>
