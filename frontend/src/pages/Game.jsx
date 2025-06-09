@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import api from "../api"
+import '../styles/Game.css'
 
 
 function Game() {
@@ -56,12 +57,23 @@ function Game() {
     }
 
     return (
-        <div style={{marginLeft: '1rem'}}>
-            <h1>{game.game_name}</h1>
-            <h2>Publisher: {game.publisher}</h2>
-            <h2>Released on {game.release_date}</h2>
-            <h3>{game.game_description}</h3>
-            <h3>Average rating: {average.toFixed(2)}</h3>
+
+    <div className="page-wrap">
+        <nav className="page-nav">
+            {game.game_name}
+        </nav>
+        <main className="page-main">
+            <p>{game.game_description}</p>
+        </main>
+        <div className='page-rating'>
+            {average.toFixed(2)}
+        </div>
+            <div className='page-publisher'>
+            {game.publisher}
+        </div>
+        <aside className="page-sidebar">
+            Aside
+        </aside>
             {reviews.map((review) => {
                return (
                 <div>
