@@ -9,11 +9,6 @@ function Home() {
     const [gameData, setGameData] = useState([])
     const navigate = useNavigate()
 
-    const imageMap = {
-        "1": massEffect2Cover
-    };
-
-
     useEffect(() => {
         fetch('../gameData.json')
         .then(res => res.json())
@@ -32,7 +27,7 @@ function Home() {
                 </p>
                 <Grid className = 'game-card' item key={game.game_id} 
                 sx={{ 
-                    backgroundImage:`url(${imageMap[game.game_id]})`,
+                    backgroundImage:`url(${game.game_cover})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
