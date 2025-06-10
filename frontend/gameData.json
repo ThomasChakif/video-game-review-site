@@ -32,14 +32,21 @@
             "game_description": "The Witcher 3: Wild Hunt is a 2015 action role-playing game developed and published by CD Projekt. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third game in The Witcher video game series, played in an open world with a third-person perspective. The games follow the Witcher series of fantasy novels by Polish author Andrzej Sapkowski. The game takes place in a fictional fantasy world based on Slavic folklore. Players control Geralt of Rivia, a monster slayer for hire known as a Witcher, and search for his adopted daughter who is on the run from the Wild Hunt. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. ",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg"
         },
-                {
-            "game_name": "Red Dead Redemption 2",
+        {
+            "game_name": "Mafia",
             "game_id": "5",
+            "developer": "Hangar 13",
+            "release_date": "September 25, 2020",
+            "game_description": "Mafia: Definitive Edition is a 2020 action-adventure game developed by Hangar 13 and published by 2K. It is a remake of the 2002 video game Mafia and the fourth entry in the series. Like the original game, the remake is set within the fictional city of Lost Heaven, Illinois, during the 1930s, and follows the rise and fall of Tommy Angelo, a Sicilian American cab driver-turned-gangster, within the Salieri crime family. The game's open world nature allows players to explore Lost Heaven at their leisure when not completing missions to advance the narrative. This is mostly done in the Free Ride game mode, where players are not restricted by the linear nature of missions and can find hidden side missions and collectibles exclusive to this mode. The gameplay builds upon 2016's Mafia III, and features enhanced mission dynamics and the introduction of motorcycles to the series. While some of the veteran Czech Mafia voice cast returned for the remake, the English voices were recast. An original score was also created for the game. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/a/ae/Mafia_Definitive_Edition.jpg"
+        },
+        {
+            "game_name": "Red Dead Redemption 2",
+            "game_id": "6",
             "developer": "Rockstar",
             "release_date": "October 26, 2018",
             "game_description": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption. The story is set in a fictionalized representation of the United States in 1899 and follows the exploits of Arthur Morgan, an outlaw and member of the Van der Linde gang, who must deal with the decline of the Wild West while attempting to survive against government forces, rival gangs, and other adversaries. The game is presented through first- and third-person perspectives, and the player may freely roam its interactive open world. Gameplay elements include shootouts, robberies, hunting, horseback riding, interacting with non-player characters, and maintaining the character's honor rating through moral choices and deeds. A bounty system governs the response of law enforcement and bounty hunters to crimes committed by the player.",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg"
         }
-
     ]
 }

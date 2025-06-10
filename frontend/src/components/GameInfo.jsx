@@ -11,7 +11,7 @@ function GameInfo({game, game_ID}) {
     const getAverage = () => {
         api.get(`/api/reviews/average-rating/${game_ID}/`)
         .then((res) => res.data)
-        .then((data) => {setAverage(data.avg ?? 0.00)})
+        .then((data) => {setAverage(data.avg ?? 3.00)})
         .catch((err) => alert(err))
     }
 
@@ -31,11 +31,15 @@ function GameInfo({game, game_ID}) {
                 {game.game_description}
             </main>
             <div className='page-developer'>
-                Developed by {game.developer}
-                <p></p>
-                Released on {game.release_date}
-                <p></p>
-                Average rating: {average.toFixed(2)} / 5.0
+                <div>
+                    Developed by {game.developer}
+                </div>
+                <div>
+                    Released on {game.release_date}
+                </div>
+                <div>
+                    Average rating: {average.toFixed(2)} / 5.0
+                </div>
             </div>
             <div className="page-photo" 
                 style={{
