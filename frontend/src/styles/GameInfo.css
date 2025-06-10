@@ -13,7 +13,7 @@
 }
 .page-wrap {
   background: black;
-  color: red;
+  color: white;
   box-shadow: 0 0 3px rgba(black, 0.33);
 
   display: grid;
@@ -60,7 +60,7 @@
   font-family: 'ArcadeClassic', sans-serif;
   border-style: solid;
   letter-spacing: 0.3px;
-  gap: 2rem;
+  gap: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
