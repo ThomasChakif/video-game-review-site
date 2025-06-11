@@ -7,7 +7,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 
@@ -55,7 +55,7 @@
   grid-column: 1 / 1; 
   grid-row: 2 / 3;
   border-style: solid;
-  border-color: #111827;
+  border-color: white;
   background-repeat: no-repeat;
   background-size: 95% 95%;
   background-position: center;
@@ -70,7 +70,7 @@
   grid-row: 2 / 3;
   font-family: 'ArcadeClassic', sans-serif;
   border-style: solid;
-  border-color: #111827;
+  border-color: white;
   letter-spacing: 0.3px;
   gap: 4rem;
   display: flex;
@@ -88,7 +88,7 @@
   font-size: 2rem;
   border-style: solid;
   letter-spacing: 0.3px;
-  border-color: #111827;
+  border-color: white;
 }
 
 .page-description {
@@ -98,7 +98,7 @@
   font-family: 'ArcadeClassic', sans-serif;
   border-style: solid;
   letter-spacing: 0.3px;
-  border-color: #111827;
+  border-color: white;
 }
 
 .average{

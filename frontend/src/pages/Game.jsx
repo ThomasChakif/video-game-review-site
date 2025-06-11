@@ -19,14 +19,6 @@ function Game() {
         .catch((err) => alert(err))
     }
 
-    // const deleteReview = (id) => {
-    //     api.delete(`api/reviews/delete/${id}/`).then((res) => {
-    //         if(res.status === 204) alert('Review was deleted!')
-    //         else alert('Failed to delete review.')
-    //         getReviews();
-    //     }).catch((err) => alert(err))
-    // };
-
     useEffect(() => {
         if(gameID){
             getReviews()
@@ -61,7 +53,7 @@ function Game() {
             {reviews.map((review) => (
                 <Review review={review} /*onDelete={deleteReview}*/ key={review.id}/>
             ))}
-        </div>
+    </div>
     )
 }
 

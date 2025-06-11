@@ -18,7 +18,6 @@ class ReviewListCreate(generics.ListCreateAPIView):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]
 
-    # get the 10 most recent reviews for a game
     # we make sure to only get the reviews of the game selected
     def get_queryset(self):
         gameID = self.kwargs['game_id']
@@ -45,3 +44,9 @@ class GetAverage(APIView):
         avg_rating = Review.objects.filter(game_id=game_id).aggregate(avg=Avg('rating')) #we return the obkect so that avg_rating = {avg: '2.66'}
         return Response(avg_rating) # we return in a response so that we serialize the return info correctly into json
     
+class ViewUserReviews(generics.ListAPIView):
+    serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get(self):
+        return Review.objects.all()
