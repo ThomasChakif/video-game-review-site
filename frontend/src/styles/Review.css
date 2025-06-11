@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+.review-container {
+  padding: 10px;
+  margin: 2px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.review-author {
+  color: #333;
+  font-family: 'ArcadeClassic', sans-serif;
+}
+
+.review-content {
+  color: #541414;
+  font-family: 'ArcadeClassic', sans-serif;
+}
+
+.review-date {
+  color: #999;
+  font-size: 0.8rem;
+  font-family: 'ArcadeClassic', sans-serif;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red */
+}

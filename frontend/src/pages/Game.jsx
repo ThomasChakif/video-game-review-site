@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import api from "../api"
-import '../styles/Game.css'
 import GameInfo from '../components/GameInfo'
+import Review from '../components/Review'
+import '../styles/Game.css'
 
 function Game() {
 
@@ -17,6 +18,14 @@ function Game() {
         .then((data) => {setReviews(data)})
         .catch((err) => alert(err))
     }
+
+    // const deleteReview = (id) => {
+    //     api.delete(`api/reviews/delete/${id}/`).then((res) => {
+    //         if(res.status === 204) alert('Review was deleted!')
+    //         else alert('Failed to delete review.')
+    //         getReviews();
+    //     }).catch((err) => alert(err))
+    // };
 
     useEffect(() => {
         if(gameID){
@@ -48,16 +57,10 @@ function Game() {
     return (
     <div>
         <GameInfo game={game} game_ID={gameID} key={game.game_id}/>
-            {reviews.map((review) => {
-               return (
-                <div>
-                    <p>Author: {review.author}</p>
-                    <p>Content: {review.review_content}</p>
-                    <p>Rating: {review.rating}.0 / 10.0</p>
-                    <p>---------------------</p>
-                </div>
-               )
-            })}
+            <p className='review-header'>Reviews</p>
+            {reviews.map((review) => (
+                <Review review={review} /*onDelete={deleteReview}*/ key={review.id}/>
+            ))}
         </div>
     )
 }

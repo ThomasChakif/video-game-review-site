@@ -11,8 +11,8 @@
   text-transform: uppercase;
 }
 .page-wrap {
-  background: #EEEEEE;
-  color: black;
+  background: black;
+  color: white;
   box-shadow: 0 0 3px rgba(black, 0.33);
 
   display: grid;
