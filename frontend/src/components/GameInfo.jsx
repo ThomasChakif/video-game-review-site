@@ -59,7 +59,7 @@ function GameInfo({game, game_ID}) {
                 <div>
                     Released on {game.release_date}
                 </div>
-                <div style={{fontSize: "5rem", color: getRatingColor()}}>
+                <div className='average' style={{fontSize: "5rem", color: getRatingColor()}}>
                     {average.toFixed(2)}
                 </div>
             </div>
