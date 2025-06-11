@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 .page-wrap {
-  background: #1f2937;
+  background: #111827;
   color: white;
   box-shadow: 0 0 3px rgba(black, 0.33);
 
@@ -57,9 +57,9 @@
   border-style: solid;
   border-color: #111827;
   background-repeat: no-repeat;
-  background-size: 95% 100%;
+  background-size: 95% 95%;
   background-position: center;
-  background-color: white;
+  background-color: #111827;
   width: auto;
   height: auto;
 }

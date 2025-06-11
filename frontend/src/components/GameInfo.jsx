@@ -29,6 +29,11 @@ function GameInfo({game, game_ID}) {
                 }
     }
 
+    const getRatingGlow = () => {
+        const color = getRatingColor()
+        return `0 0 20px ${color}, 0 0 40px ${color}, 0 0 60px ${color}`
+    }
+
 
     const getAverage = () => {
         api.get(`/api/reviews/average-rating/${game_ID}/`)
@@ -59,7 +64,7 @@ function GameInfo({game, game_ID}) {
                 <div>
                     Released on {game.release_date}
                 </div>
-                <div className='average' style={{fontSize: "5rem", color: getRatingColor()}}>
+                <div className='average' style={{fontSize: "5rem", color: getRatingColor(), textShadow: getRatingGlow()}}>
                     {average.toFixed(2)}
                 </div>
             </div>
