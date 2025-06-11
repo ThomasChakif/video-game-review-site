@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import api from "../api"
 import Review from "../components/Review";
 // import { useNavigate } from 'react-router-dom'
+import AppHeader from "../components/AppHeader";
 
 
 function UserPage() {
     const [reviews, setReviews] = useState([])
 
     const getReviews = () => {
-        api.get(`/api/reviews/user/`)
+        api.get("/api/reviews/user/")
         .then((res) => res.data)
         .then((data) => {setReviews(data)})
         .catch((err) => alert(err))
@@ -27,6 +28,7 @@ function UserPage() {
 
     return(
         <div>
+            <AppHeader />
             <p className='review-header'>Reviews</p>
             {reviews.map((review) => (
                 <Review review={review} /*onDelete={deleteReview}*/ key={review.id}/>

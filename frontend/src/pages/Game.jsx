@@ -4,6 +4,8 @@ import api from "../api"
 import GameInfo from '../components/GameInfo'
 import Review from '../components/Review'
 import '../styles/Game.css'
+import AppHeader from "../components/AppHeader";
+
 
 function Game() {
 
@@ -48,6 +50,7 @@ function Game() {
 
     return (
     <div>
+        <AppHeader />
         <GameInfo game={game} game_ID={gameID} key={game.game_id}/>
             <p className='review-header'>Reviews</p>
             {reviews.map((review) => (

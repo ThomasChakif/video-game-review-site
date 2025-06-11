@@ -48,5 +48,5 @@ class ViewUserReviews(generics.ListAPIView):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]
 
-    def get(self):
+    def get_queryset(self):
         return Review.objects.all()

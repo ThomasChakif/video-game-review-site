@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 import '../styles/Home.css'
-import massEffect2Cover from '../img/MassEffect2_cover.PNG';
+import AppHeader from "../components/AppHeader";
 
 function Home() {
 
@@ -16,6 +16,7 @@ function Home() {
     })
 
     return <div className='page'>
+        <AppHeader />
         <Grid container direction = "row" spacing={1}
             sx={{
                 justifyContent: "center",
