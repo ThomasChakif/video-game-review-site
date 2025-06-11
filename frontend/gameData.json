@@ -47,6 +47,30 @@
             "release_date": "October 26, 2018",
             "game_description": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption. The story is set in a fictionalized representation of the United States in 1899 and follows the exploits of Arthur Morgan, an outlaw and member of the Van der Linde gang, who must deal with the decline of the Wild West while attempting to survive against government forces, rival gangs, and other adversaries. The game is presented through first- and third-person perspectives, and the player may freely roam its interactive open world. Gameplay elements include shootouts, robberies, hunting, horseback riding, interacting with non-player characters, and maintaining the character's honor rating through moral choices and deeds. A bounty system governs the response of law enforcement and bounty hunters to crimes committed by the player.",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg"
+        },
+                {
+            "game_name": "Minecraft",
+            "game_id": "7",
+            "developer": "Mojang Studios",
+            "release_date": "November 18, 2011",
+            "game_description": "Minecraft is a 2011 sandbox game developed and published by the Swedish video game developer Mojang Studios. Originally created by Markus 'Notch' Persson using the Java programming language, the first public alpha build was released on 17 May 2009. The game was continuously developed from then on, receiving a full release on 18 November 2011. Afterwards, Persson left Mojang and gave Jens 'Jeb' Bergensten control over development. In the years since its release, it has been ported to several platforms, including smartphones, tablets, and various video game consoles. In 2014, Mojang and the Minecraftintellectual property were purchased by Microsoft for US$2.5 billion. In Minecraft, players explore a procedurally generated, three-dimensional world with virtually infinite terrain made up of voxels. Players can discover and extract raw materials, craft tools and items, and build structures, earthworks, and machines. Depending on their chosen game mode, players can fight hostile mobs, as well as cooperate with or compete against other players in multiplayer. The game has two main modes: Survival mode, where players must acquire resources to survive, and Creative mode, where players have unlimited resources and the ability to fly. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/b/b6/Minecraft_2024_cover_art.png"
+        },
+                {
+            "game_name": "Dragon Age: Origins",
+            "game_id": "8",
+            "developer": "Bioware",
+            "release_date": "November 3, 2009",
+            "game_description": "Dragon Age: Origins is a 2009 role-playing video game developed by BioWareand published by Electronic Arts. It is the first game in the Dragon Agefranchise. Set in the fictional kingdom of Ferelden during a period of civil strife, the game puts the player in the role of a warrior, mage, or rogue coming from an elven, human, or dwarven background. The player character is recruited into the Grey Wardens, an ancient order that stands against monstrous forces known as 'Darkspawn', and is tasked with defeating the Archdemon that commands them and ending their invasion. The game is played from a third-person perspectivethat can be shifted to a top-down perspective. Throughout the game, players encounter various companions, who play major roles in the game's plot and gameplay. BioWare described Dragon Age: Origins as a 'dark heroic fantasy' set in a unique world, and a spiritual successor to their previous Baldur's Gate and Neverwinter Nights franchises. Development of the game began in 2002 and BioWare employed more than 144 voice-actors, and hired Inon Zur to compose the game's music.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/8/89/Dragon_Age_Origins_cover.png"
+        },
+                {
+            "game_name": "Fallout 4",
+            "game_id": "9",
+            "developer": "Bethesda",
+            "release_date": "November 10, 2015",
+            "game_description": "Fallout 4 is a 2015 action role-playing game developed by Bethesda Game Studios and published by Bethesda Softworks. It is the fourth main game in the Fallout series and was released worldwide on November 10, 2015, for Microsoft Windows, PlayStation 4, and Xbox One. The game is set within an open world post-apocalyptic environment that encompasses the city of Boston and the surrounding Massachusetts region known as 'The Commonwealth'. The main story takes place in the year 2287, 10 years after the events of Fallout 3 and 210 years after 'The Great War', which caused a nuclear holocaust. The player assumes control of a character simply referred to as the 'Sole Survivor', who emerges from a long-term cryogenic stasis in Vault 111, an underground nuclear fallout shelter. After witnessing the murder of their spouse and the kidnapping of their son, the Sole Survivor ventures out into the Commonwealth to search for their missing child. The player explores the game's dilapidated world, completes various quests, helps out various factions, and acquires experience points to level up and increase the abilities of their character.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/7/70/Fallout_4_cover_art.jpg"
         }
     ]
 }

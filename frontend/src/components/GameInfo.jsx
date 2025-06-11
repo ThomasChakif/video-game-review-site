@@ -7,11 +7,33 @@ import api from "../api"
 function GameInfo({game, game_ID}) {
     const [average, setAverage] = useState(0)
 
+    const getRatingColor = () => {
+        const numValue = parseFloat(average)
+                if (numValue <= 2.0){
+                    return 'red'
+                }
+                else if (numValue > 2.0 && numValue <= 4.0){
+                    return 'orange'
+                }
+                else if (numValue > 4.0 && numValue <= 6.0){
+                    return 'D5B60A'
+                }
+                else if(numValue > 6.0 && numValue <= 8.0){
+                    return '#00ab41'
+                }
+                else if(numValue > 8.0){
+                    return 'green'
+                }
+                else{
+                    return 'black'
+                }
+    }
+
 
     const getAverage = () => {
         api.get(`/api/reviews/average-rating/${game_ID}/`)
         .then((res) => res.data)
-        .then((data) => {setAverage(data.avg ?? 3.00)})
+        .then((data) => {setAverage(data.avg ?? 7.00)})
         .catch((err) => alert(err))
     }
 
@@ -37,8 +59,8 @@ function GameInfo({game, game_ID}) {
                 <div>
                     Released on {game.release_date}
                 </div>
-                <div>
-                    Average rating: {average.toFixed(2)} / 5.0
+                <div style={{fontSize: "5rem", color: getRatingColor()}}>
+                    {average.toFixed(2)}
                 </div>
             </div>
             <div className="page-photo" 

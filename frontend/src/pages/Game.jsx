@@ -53,7 +53,7 @@ function Game() {
                 <div>
                     <p>Author: {review.author}</p>
                     <p>Content: {review.review_content}</p>
-                    <p>Rating: {review.rating}.0 / 5.0</p>
+                    <p>Rating: {review.rating}.0 / 10.0</p>
                     <p>---------------------</p>
                 </div>
                )
