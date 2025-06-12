@@ -8,25 +8,31 @@ function GameInfo({game, game_ID}) {
     const [average, setAverage] = useState(0)
 
     const getRatingColor = () => {
-        const numValue = parseFloat(average)
-                if (numValue <= 2.0){
-                    return 'red'
-                }
-                else if (numValue > 2.0 && numValue <= 4.0){
-                    return 'orange'
-                }
-                else if (numValue > 4.0 && numValue <= 6.0){
-                    return 'D5B60A'
-                }
-                else if(numValue > 6.0 && numValue <= 8.0){
-                    return '#00ab41'
-                }
-                else if(numValue > 8.0){
-                    return 'green'
-                }
-                else{
-                    return 'black'
-                }
+            const value = parseFloat(average)
+                switch (true) {
+                    case value <= 1.0:
+                        return '#FD0101';
+                    case value <= 2.0:
+                        return '#FC3201';
+                    case value <= 3.0:
+                        return '#FC9901';
+                    case value <= 4.0:
+                        return '#CC9901';
+                    case value <= 5.0:
+                        return '#989901';
+                    case value <= 6.0:
+                        return '#669901';
+                    case value <= 7.0:
+                        return '#339901';
+                    case value <= 8.0:
+                        return '#119901';    
+                    case value <= 9.0:
+                        return '#017701';
+                    case value > 9.0:
+                        return '#005400'
+                    default:
+                        return 'black';
+            }
     }
 
     const getRatingGlow = () => {
