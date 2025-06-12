@@ -57,12 +57,13 @@
   border-style: solid;
   border-color: white;
   background-repeat: no-repeat;
-  background-size: 95% 95%;
+  background-size: auto auto;
   background-position: center;
-  background-color: #111827;
+  background-color: white;
   width: auto;
   height: auto;
 }
+
 
 .page-developer {
   color: white;

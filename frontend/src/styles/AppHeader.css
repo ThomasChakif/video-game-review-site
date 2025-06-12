@@ -3,4 +3,5 @@
 .VGR-header{
     font-family: 'ArcadeClassic', sans-serif;
     cursor: pointer;
+    flex-grow: 1;
 }
