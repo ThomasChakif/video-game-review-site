@@ -2,25 +2,29 @@
 
 .review-container {
   padding: 10px;
-  margin: 2px;
+  margin: 3px;
   border: 2px solid #ccc;
   border-radius: 5px;
+  background-color: #EEEEEE;
 }
 
 .review-author {
   color: #111827;
   font-family: 'ArcadeClassic', sans-serif;
+  font-size: 1.1rem
 }
 
 .review-content {
   color: #541414;
   font-family: 'ArcadeClassic', sans-serif;
+  font-size: 1.1rem
 }
 
 .review-date {
   color: #999;
   font-size: 0.8rem;
   font-family: 'ArcadeClassic', sans-serif;
+  font-size: 1.1rem
 }
 
 .delete-button {

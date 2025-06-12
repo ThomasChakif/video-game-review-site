@@ -11,7 +11,7 @@ function AppHeader() {
     const navigate = useNavigate()
     return (
         <Box>
-            <AppBar sx={{background: '#111827', borderRadius: "0 0 25px 25px;"}}position="static">
+            <AppBar sx={{background: '#111827', borderRadius: "0 0 25px 25px;", borderColor: 'white'}}position="static">
                 <Toolbar>
                     <h1 onClick={() => navigate('/')} className='VGR-header'>
                         VGR
