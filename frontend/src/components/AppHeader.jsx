@@ -16,7 +16,7 @@ function AppHeader() {
                     <h1 onClick={() => navigate('/')} className='VGR-header'>
                         VGR
                     </h1>
-                    <Button onClick={() => navigate('/user')} color="inherit" sx={{margin: '1rem'}}>Account</Button>
+                    <Button onClick={() => navigate('/userpage')} color="inherit" sx={{margin: '1rem'}}>Account</Button>
                     <Button onClick={() => navigate('/logout')} color="inherit" sx={{margin: '1rem'}}>Logout</Button>
                 </Toolbar>
             </AppBar>

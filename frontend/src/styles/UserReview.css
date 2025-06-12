@@ -14,6 +14,12 @@
   font-size: 1.1rem
 }
 
+.review-game {
+  color: darkgoldenrod;
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 1.1rem
+}
+
 .review-content {
   color: #541414;
   font-family: 'ArcadeClassic', sans-serif;
@@ -25,4 +31,18 @@
   font-size: 0.8rem;
   font-family: 'ArcadeClassic', sans-serif;
   font-size: 1.1rem
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red */
 }

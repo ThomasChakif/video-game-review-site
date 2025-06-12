@@ -54,7 +54,7 @@ function Game() {
         <GameInfo game={game} game_ID={gameID} key={game.game_id}/>
             <p className='review-header'>Reviews</p>
             {reviews.map((review) => (
-                <Review review={review} /*onDelete={deleteReview}*/ key={review.id}/>
+                <Review review={review}key={review.id}/>
             ))}
     </div>
     )

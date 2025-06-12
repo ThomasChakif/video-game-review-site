@@ -49,4 +49,5 @@ class ViewUserReviews(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        return Review.objects.all()
+        user = self.request.user
+        return Review.objects.filter(author=user)
