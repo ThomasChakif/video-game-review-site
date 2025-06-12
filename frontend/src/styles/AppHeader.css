@@ -2,16 +2,10 @@
 
 .VGR-header{
     font-family: 'ArcadeClassic', sans-serif;
-    cursor: pointer;
     flex-grow: 1;
-    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* pulse effect to the text */
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
+.VGR-header span:hover {
+  cursor: pointer;
+  color: red;
 }

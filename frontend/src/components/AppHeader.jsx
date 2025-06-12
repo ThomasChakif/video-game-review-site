@@ -13,8 +13,8 @@ function AppHeader() {
         <Box>
             <AppBar sx={{background: '#111827', borderRadius: "0 0 25px 25px;", borderColor: 'white'}}position="static">
                 <Toolbar>
-                    <h1 onClick={() => navigate('/')} className='VGR-header'>
-                        VGR
+                    <h1 onClick={() => navigate('/')} className = 'VGR-header' sx={{flexGrow: 1}}>
+                        <span>VGR</span>
                     </h1>
                     <Button onClick={() => navigate('/userpage')} color="inherit" sx={{margin: '1rem'}}>Account</Button>
                     <Button onClick={() => navigate('/logout')} color="inherit" sx={{margin: '1rem'}}>Logout</Button>
