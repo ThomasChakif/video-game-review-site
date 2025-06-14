@@ -29,9 +29,9 @@ function Form({route, method}) {
     }
 
     return (
-        <div>
+        <div className='form-page'>
             <form className = 'form-container' onSubmit={handleSubmit}>
-                <h1>{name}</h1>
+                <h1 className='form-header'>{name}</h1>
                 <input
                     className='form-input'
                     type='text'
@@ -48,7 +48,7 @@ function Form({route, method}) {
                     placeholder='Password'
                 >
                 </input>
-                <button className='form-button' type='submit'>{name}</button>
+                <button className='form-button' type='submit'>{name} !</button>
             </form>
             {method === 'login' && (
                 <div className='reg-box'>
