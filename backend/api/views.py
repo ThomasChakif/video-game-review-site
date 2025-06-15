@@ -14,6 +14,16 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
 
+class UserReviewList(generics.ListAPIView):
+    serializer_class = ReviewSerializer
+    permission_classes = [IsAuthenticated]
+
+    # we make sure to only get the reviews of the game selected
+    def get_queryset(self):
+        gameID = self.kwargs['game_id']
+        user = self.request.user
+        return Review.objects.filter(game_id=gameID).filter(author=user)
+
 class ReviewListCreate(generics.ListCreateAPIView):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]

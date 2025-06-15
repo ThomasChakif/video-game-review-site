@@ -10,7 +10,7 @@ function UserPage() {
     const getReviews = () => {
         api.get("/api/reviews/userpage/")
         .then((res) => res.data)
-        .then((data) => {setReviews(data)})
+        .then((data) => {setReviews(data ?? [])})
         .catch((err) => alert(err))
     }
 
@@ -30,9 +30,14 @@ function UserPage() {
         <div>
             <AppHeader />
             <p className='review-header'>My Reviews</p>
-            {reviews.map((review) => (
-                <UserReview review={review} onDelete={deleteReview} key={review.id}/>
-            ))}
+            {(reviews.length === 0) && (
+                <p className='review-header'>Leave a review to see them here!</p>
+            )}
+            {(reviews.length > 0) && (
+                reviews.map((review) => (
+                    <UserReview review={review} onDelete={deleteReview} key={review.id}/>
+                ))
+            )}
         </div>
     )
 }

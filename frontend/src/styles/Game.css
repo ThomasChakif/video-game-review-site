@@ -6,3 +6,38 @@
     font-size: 2rem;
     margin-left: 1rem;
 }
+
+.header-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-info{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    font-family: 'ArcadeClassic', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.review-button{
+  background-color: #541414;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+  padding: 8px;
+  transition: 0.3s ease-in-out;
+  border-style: solid;
+}
+
+.review-button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
