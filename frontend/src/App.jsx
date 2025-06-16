@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 import Game from './pages/Game'
 import UserPage from './pages/UserPage'
+import Help from './pages/Help'
 
 function Logout(){
   localStorage.clear()
@@ -33,6 +34,14 @@ function App() {
             element = {
               <ProtectedRoute>
                 <Game />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path='/help'
+            element = {
+              <ProtectedRoute>
+                <Help />
               </ProtectedRoute>
             }
           />
