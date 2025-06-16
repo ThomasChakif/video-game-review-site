@@ -5,7 +5,7 @@ import GameInfo from '../components/GameInfo'
 import Review from '../components/Review'
 import '../styles/Game.css'
 import AppHeader from "../components/AppHeader";
-
+import NewReviewModal from '../components/NewReviewModal'
 
 function Game() {
 
@@ -14,6 +14,9 @@ function Game() {
     const [game, setGame] = useState(null)
     const [reviews, setReviews] = useState([])
     const [userReview, setUserReview] = useState([])
+    const [newReviewModalOpen, setNewReviewModalOpen] = useState(false)
+
+    const handleModalOpen = () => setNewReviewModalOpen(true)
 
     const getReviews = () => {
         api.get(`/api/reviews/${gameID}/`)
@@ -96,7 +99,7 @@ function Game() {
             <div>
                 <div>
                     {(userReview.length === 0) && (
-                        <button className='review-button'>LEAVE A REVIEW</button>
+                        <button onClick={handleModalOpen} className='review-button'>LEAVE A REVIEW</button>
                     )}
                 </div>
                 <div className='review-info'>
@@ -114,6 +117,12 @@ function Game() {
                     <Review review={review}key={review.id}/>
                 ))
             )}
+        <NewReviewModal
+            newReviewModalOpen={newReviewModalOpen}
+            setNewReviewModalOpen={setNewReviewModalOpen}
+            getReviews={getReviews}
+            gameID={gameID}
+        />
     </div>
     )
 }
