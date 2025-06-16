@@ -40,8 +40,10 @@ function Help () {
         <div>
             <AppHeader />
             <div classname="formContainer">
-                <h1 className="aboutHeader">Contact Us</h1>
-                <p className="aboutInfo">Fill out the form below to get in contact with us!</p>
+                <div className='stack'>
+                    <h1 className="aboutHeader">Contact Us</h1>
+                    <p className="aboutInfo">Fill out the form below to get in contact with us!</p>
+                </div>
                 <form id='contact' onSubmit={submitForm}>
                     <h3 className="contactFormHeader">Name<span className="asterisk">*</span></h3>
                     <fieldset>
