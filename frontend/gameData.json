@@ -119,6 +119,78 @@
             "release_date": "April 16, 2013",
             "game_description": "Injustice: Gods Among Us is a 2013 fighting video game. It is the first installment in the Injustice franchise based upon the fictional universe of DC Comics.  Players select one of several characters from the DC Universe (consisting of both villains and heroes), to engage in combat, aiming to knock out their opponent. The game is set in a 2.5D environment: while character models and backgrounds are rendered in three-dimensional graphics, the characters are restricted to fight within a two-dimensional space. Injustice builds upon several aspects from NetherRealm Studios' previous title, Mortal Kombat(2011), including its controls, game mechanics, narrative-driven campaign, and online functionality. The storyline is set in a parallel universe within the DC Comics' Multiverse, where Superman has become a tyrantand established a new world order after the Joker tricked him into killing Lois Lane and destroying Metropolis. In an effort to stop this, Batman summons counterparts of the League's members from the main universe to join his insurgency and end the totalitarian regime. The game received positive reviews from critics, who praised its story, gameplay mechanics, and use of the DC Comics license. ",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/f/f8/Injustice_Gods_Among_Us_Cover_Art.jpg"
+        },
+        {
+            "game_name": "The Last of Us",
+            "game_id": "16",
+            "developer": "Naughty Dog",
+            "release_date": "June 14, 2013",
+            "game_description":"The Last of Us is a 2013 action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. Players control Joel, a smuggler tasked with escorting a teenage girl, Ellie, across a post-apocalyptic United States. The Last of Us is played from a third-person perspective. Players use firearms, improvised weapons, and stealth to defend against hostile humans and cannibalistic creatures infected by a mutated fungus. In the online multiplayer mode, up to eight players engage in cooperative and competitive gameplay. The game's development began in 2009 after the release of Naughty Dog's previous game, Uncharted 2: Among Thieves. The studio split into two teams for the first time, with one developing The Last of Us while the other worked on Uncharted 3: Drake's Deception. Troy Baker and Ashley Johnson portrayed Joel and Ellie, respectively, through voice and motion capture, and assisted creative director Neil Druckmann with developing the characters and story; Joel and Ellie's relationship became the focus of development, with all other elements crafted around it. The score was composed and performed by Gustavo Santaolalla.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg"
+        },
+        {
+            "game_name": "Ghost Of Tsushima",
+            "game_id": "17",
+            "developer": "Sucker Punch",
+            "release_date": "July 17, 2020",
+            "game_description": "Ghost of Tsushima is a 2020 action-adventure game developed by Sucker Punch Productions and published by Sony Interactive Entertainment. The player controls Jin Sakai, a samurai on a quest to protect Tsushima Island during the first Mongol invasion of Japan. Jin must choose between following the warrior code to fight honorably, or by using practical but dishonorable methods of repelling the Mongols with minimal casualties. The game features a large open world which can be explored either on foot or on horseback. When facing enemies, the player can choose to engage in a direct confrontation using Jin's katana or to use stealth tactics to assassinate opponents. A multiplayer mode titled Ghost of Tsushima: Legends was released in October 2020 and made available separately in September 2021. Sucker Punch began developing the game after the release of Infamous First Light in 2014, as the studio wanted to move on from the Infamous franchise to create a game with a heavy emphasis on melee combat. The studio collaborated with Japan Studio and visited Tsushima Island twice to ensure that the game was as culturally and historically authentic as possible.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg"
+        },
+        {
+            "game_name": "Fallout: New Vegas",
+            "game_id": "18",
+            "developer": "Obsidian Entertainment",
+            "release_date": "October 19, 2010",
+            "game_description": "Fallout: New Vegas is a 2010 action role-playing game that was developed by Obsidian Entertainment and published by Bethesda Softworks. The game, which was released for Microsoft Windows, PlayStation 3, and Xbox 360, is set in the Mojave Desert 204 years after a devastating nuclear war. The player controls a courier who survives an assassination attempt, and becomes embroiled in a conflict between different governing factions that are vying for control of the region. Fallout: New Vegas features a freely explorable open world, and the player can engage in combat with a variety of weapons. The player can also initiate conversations with non-player characters in the form of dialogue trees, and their responses determine their reputation among the different factions. After the release of Fallout 3 in 2008, Bethesda contracted Obsidian to develop a spin-off game in the Fallout series. The developers chose Las Vegas, Nevada, and the surrounding Mojave Desert as the setting because they evoked the 1950s imagery the series was known for, as well as the post-apocalyptic setting of Mad Max. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/3/34/Fallout_New_Vegas.jpg"
+        },
+        {
+            "game_name": "Resident Evil 4",
+            "game_id": "19",
+            "developer": "Capcom",
+            "release_date": "January 11, 2005",
+            "game_description": "Resident Evil 4 is a 2005 survival horror game developed and published by Capcom for the GameCube. Players control the special agent Leon S. Kennedy on a mission to rescue the US president's daughter, Ashley Graham, who has been kidnapped by a religious cult in rural Spain. Leon fights hordes of enemies infected by a mind-controlling parasite and reunites with the spy Ada Wong. In a departure from the fixed camera angles and slower gameplay of previous Resident Evil games, Resident Evil 4 features a dynamic camera system and action-oriented gameplay. Development on Resident Evil 4 began for the PlayStation 2 in 1999. Four proposed versions were discarded; the first was directed by Hideki Kamiya, but series creator Shinji Mikami felt it was too great a departure from the previous games, so it was spun off as Devil May Cry (2001). Other versions were scrapped until Mikami took directorial duties for what became the final version. The game was announced as part of the Capcom Five, a collaboration between Capcom and Nintendo to create five exclusives for the GameCube.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg"
+        },
+        {
+            "game_name": "Halo 4",
+            "game_id": "20",
+            "developer": "343 Industries",
+            "release_date": "November 6, 2012",
+            "game_description": "Halo 4 is a 2012 first-person shooter video game developed by 343 Industries and published by Microsoft Studios for the Xbox 360 video game console. Halo 4's story follows a genetically enhanced human supersoldier, Master Chief, and his artificial intelligence construct Cortana, as they encounter unknown threats while exploring an ancient civilization's planet. The player assumes the role of Master Chief who battles against a new faction that splintered off from remnants of the Covenant, a former military alliance of alien races, as well as a new enemy: mechanical warriors of the Forerunner empire known as the Prometheans. The game features a new selection of weapons, enemies, and game modes not present in previous titles of the series. Development of Halo 4 began in 2009 and continued until September 2012. Halo 4 is 343 Industries' first original title within the Halo series—previously, development of the main series was undertaken by Bungie, the creator of the franchise. In the developmental process, 343 Industries decided to explore the Forerunner fiction within the Halo universe, leading the team to design a new setting, enemies, and main antagonist. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/9/92/Halo_4_box_artwork.png"
+        },
+        {
+            "game_name": "Final Fantasy VII",
+            "game_id": "21",
+            "developer": "Square",
+            "release_date": "January 31, 1997",
+            "game_description": "Final Fantasy VII is a 1997 role-playing video game developed by Square for the PlayStation. The seventh main installment in the Final Fantasy series, it was released in Japan by Square and internationally by Sony Computer Entertainment, becoming the first game in the main series to have a PAL release. The game's story follows Cloud Strife, a mercenary who joins an eco-terrorist organization to stop a world-controlling megacorporation from using the planet's life essence as an energy source. Ensuing events send Cloud and his allies in pursuit of Sephiroth, a superhuman who seeks to wound the planet and harness its healing power in order to be reborn as a god. Throughout their journey, Cloud bonds with his party members, including Aerith Gainsborough, who holds the secret to saving their world. Development began in 1994, originally for the Super Nintendo Entertainment System. After delays and technical difficulties from experimenting with several platforms, most notably the Nintendo 64, Square moved production to the PlayStation, largely due to the advantages of the CD-ROM format. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/c/c2/Final_Fantasy_VII_Box_Art.jpg"
+        },
+        {
+            "game_name": "Breath of the Wild",
+            "game_id": "22",
+            "developer": "Nintendo EPD",
+            "release_date": "March 3, 2017",
+            "game_description": "he Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed and published by Nintendo. Set at the end of the Zelda timeline, the player controls an amnesiac Link as he sets out to save Princess Zelda and prevent Calamity Ganon from destroying the world. Players explore the open world of Hyrule while they collect items and complete objectives such as puzzles and side quests. Breath of the Wild's world is unstructured and encourages exploration and experimentation; the story can be completed in a nonlinear fashion. Initially planned as a 2015 Wii U exclusive, Breath of the Wild released on March 3, 2017, for the Wii U and Nintendo Switch; an enhanced edition released on June 5, 2025 for Nintendo Switch 2. Development lasted five years, commencing immediately after the release of The Legend of Zelda: Skyward Sword in 2011. Led by director Hidemaro Fujibayashi and producer Eiji Aonuma, Nintendo sought to rethink Zelda's conventions and introduced elements such as detailed chemistry and physics engines. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
+        },
+        {
+            "game_name": "Mario Kart 8",
+            "game_id": "23",
+            "developer": "Nintendo EAD, EPD",
+            "release_date": "May 29, 2014",
+            "game_description": "Mario Kart 8 is a 2014 kart racing game developed and published by Nintendo for the Wii U. It retains the gameplay of previous Mario Kart games, with players controlling a Mario character in races around tracks. Tracks are themed around locales from the Super Mario series populated with power-ups that help players gain advantages in races. Different difficulties are selectable prior to a race; harder difficulties make gameplay faster. In the new anti-gravity sequences, players drive on walls and ceilings. Mario Kart 8 contains a variety of single-player and local and online multiplayer game modes, including Grand Prix racing and arena-based battle modes. Nintendo revealed Mario Kart 8 in 2013 and released it in May 2014. Both paid and free downloadable content (DLC) was released after its launch, including additional tracks and a new difficulty setting. It was rereleased on the Nintendo Switch in April 2017 as Mario Kart 8 Deluxe, including the DLC, a revamped battle mode and other gameplay alterations. From March 2022 until November 2023, Deluxe received additional DLC: the 'Booster Course Pass', which added 48 circuits and eight characters.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg"
+        },
+        {
+            "game_name": "Super Smash Bros. Ultimate",
+            "game_id": "24",
+            "developer": "Bandai Namco",
+            "release_date": "December 7, 2018",
+            "game_description": "Super Smash Bros. Ultimate is a 2018 crossover fighting game developed by Bandai Namco Studios and Sora Ltd. and published by Nintendo for the Nintendo Switch. It is the fifth installment in the Super Smash Bros. series, succeeding Super Smash Bros. for Nintendo 3DS and Wii U (2014). The game follows the series' traditional style of gameplay, in which players control one of the various characters and use attacks to weaken their opponents and knock them out of an arena. It features a wide variety of game modes, including a single-player campaign and multiplayer versus modes. Ultimate features 89 playable fighters, including all characters from previous Super Smash Bros. games as well as newcomers. The roster ranges from Nintendo characters to those from third-party franchises. Planning for the game had begun by December 2015, with full development starting after the completion of 3DS/Wii U's downloadable content (DLC). Series creator and director Masahiro Sakurai returned along with Bandai Namco Studios and Sora, the studios that developed 3DS/Wii U, with their return speeding up the preparation process. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/5/50/Super_Smash_Bros._Ultimate.jpg"
         }
     ]
 }
