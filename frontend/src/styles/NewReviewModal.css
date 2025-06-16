@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+.review-Box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+    background-color: white;
+    border: solid #111827;
+    border-radius: 10px;
+    box-shadow: 24;
+    padding: 4;
+    text-align: center;
+    margin: 20px;
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+.review-Box h2{
+    color: #541414
+}
+
+.review-close-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}

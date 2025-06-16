@@ -1,24 +1,12 @@
 import { useState } from "react";
-import {Button, Modal, Box, Stack, TextField} from '@mui/material'
+import {Button, Modal, Box, Stack, TextField, TableRow} from '@mui/material'
 import api from "../api";
 import { ACCESS_TOKEN } from '../constants'
-
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'grey',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
+import '../styles/NewReviewModal.css'
 
 
 export default function NewReviewModal({newReviewModalOpen, setNewReviewModalOpen, getReviews, gameID}){
-    const [review_content, setReviewContent] = useState()
+    const [review_content, setReviewContent] = useState("")
     const [rating, setRating] = useState()
 
     const handleModalClose = () => setNewReviewModalOpen(false)
@@ -48,13 +36,13 @@ export default function NewReviewModal({newReviewModalOpen, setNewReviewModalOpe
 
     return (
         <Modal open={newReviewModalOpen} onClose ={handleModalClose}>
-             <Box sx={style}>
-                <h3>New Review</h3>
+             <Box className='review-Box'>
+                <h2>New Review</h2>
                 <Stack spacing={2}>
-                    <TextField required label='Tell us what you thought...' onChange={event =>
+                    <TextField sx={{p: '3px'}} required label='Tell us what you thought...' onChange={event =>
                         setReviewContent(event.target.value)
                     }/>
-                    <TextField required label="Your rating out of 10.0" type="number" InputProps={{ inputProps: { min: 0, max: 10 } }} value={rating} onChange={event => {
+                    <TextField sx={{p: '4px'}} required label="Your rating out of 10.0" type="number" InputProps={{ inputProps: { min: 0, max: 10 } }} value={rating} onChange={event => {
                         const ic = event.target.value
                         if (/^\d*$/.test(ic)) { // regex to allow only whole numbers
                             setRating(ic)
@@ -62,8 +50,10 @@ export default function NewReviewModal({newReviewModalOpen, setNewReviewModalOpe
                     }}
                     />
                 </Stack>
-                <Button onClick={addReview}>Add Review</Button>
-                <Button onClick={handleModalClose}>Close</Button>
+                <div className='review-close-buttons'>
+                    <Button sx={{color: '#111827'}} onClick={addReview}>Add Review</Button>
+                    <Button sx={{color: '#111827'}} onClick={handleModalClose}>Close</Button>
+                </div>
              </Box>
         </Modal>
     )

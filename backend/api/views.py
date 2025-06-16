@@ -31,7 +31,7 @@ class ReviewListCreate(generics.ListCreateAPIView):
     # we make sure to only get the reviews of the game selected
     def get_queryset(self):
         gameID = self.kwargs['game_id']
-        return Review.objects.filter(game_id=gameID).order_by('created_at')
+        return Review.objects.filter(game_id=gameID).order_by('created_at').reverse()
     
     def perform_create(self, serializer):
         if serializer.is_valid():
@@ -60,4 +60,4 @@ class ViewUserReviews(generics.ListAPIView):
 
     def get_queryset(self):
         user = self.request.user
-        return Review.objects.filter(author=user)
+        return Review.objects.filter(author=user).order_by('created_at').reverse()
