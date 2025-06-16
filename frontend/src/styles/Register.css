@@ -1,3 +1,8 @@
 .page-body-reg{
-    background-color: black;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'ArcadeClassic', sans-serif;
+  text-align: center;
 }

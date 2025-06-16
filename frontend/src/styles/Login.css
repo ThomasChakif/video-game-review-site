@@ -5,7 +5,7 @@
   color: white;
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  justify-content: space-between;
   font-family: 'ArcadeClassic', sans-serif;
 }
 

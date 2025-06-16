@@ -10,7 +10,6 @@ export default function NewReviewModal({newReviewModalOpen, setNewReviewModalOpe
     const [rating, setRating] = useState()
 
     const handleModalClose = () => setNewReviewModalOpen(false)
-    const token = localStorage.getItem(ACCESS_TOKEN);
 
     const addReview = async () => {
         if(!review_content || !rating){
@@ -42,7 +41,7 @@ export default function NewReviewModal({newReviewModalOpen, setNewReviewModalOpe
                     <TextField sx={{p: '3px'}} required label='Tell us what you thought...' onChange={event =>
                         setReviewContent(event.target.value)
                     }/>
-                    <TextField sx={{p: '4px'}} required label="Your rating out of 10.0" type="number" InputProps={{ inputProps: { min: 0, max: 10 } }} value={rating} onChange={event => {
+                    <TextField sx={{p: '4px'}} required label="Rating out of 10 (whole numbers only)" type="number" InputProps={{ inputProps: { min: 0, max: 10 } }} value={rating} onChange={event => {
                         const ic = event.target.value
                         if (/^\d*$/.test(ic)) { // regex to allow only whole numbers
                             setRating(ic)
