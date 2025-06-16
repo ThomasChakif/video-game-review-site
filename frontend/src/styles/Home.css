@@ -10,7 +10,7 @@
 }
 
 .page{
-     background-color: black;
+     background-image: url('../img/space_background.jpeg');
 }
 
 body{
@@ -27,8 +27,8 @@ body{
 .game-titles{
      font-family: 'ArcadeClassic', sans-serif;
      color: white;
-     font-size: 1.7rem;
-     font-weight: bolder;
+     font-size: 1.8rem;
+     font-weight: bold;
      margin: 0;
      letter-spacing: 0.5px;
      text-align: center;

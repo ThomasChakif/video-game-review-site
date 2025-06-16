@@ -1,5 +1,5 @@
 .page-body-reg{
-  background-color: black;
+  background-image: url('../img/space_background.jpeg');
   color: white;
   display: flex;
   flex-direction: column;
