@@ -24,6 +24,10 @@ body{
      margin-bottom: 2rem;
 }
 
+.game-rating{
+     font-family: 'ArcadeClassic', sans-serif;
+}
+
 .game-titles{
      font-family: 'ArcadeClassic', sans-serif;
      color: white;
