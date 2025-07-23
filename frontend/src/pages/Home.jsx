@@ -136,7 +136,10 @@ function Home() {
                     </Box>
                     <button 
                         className = 'game-button'
-                        onClick={() => navigate(`/game/${game.game_id}`)}>
+                        onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            navigate(`/game/${game.game_id}`)}}>
                             VISIT PAGE
                         </button>
                     </Grid>
