@@ -65,7 +65,7 @@ function GameInfo({game, game_ID}) {
             </main>
             <div className='page-developer'>
                 <div>
-                    Developed by {game.developer}
+                    Developed by: {game.developer}
                 </div>
                 <div>
                     Released on {game.release_date}

@@ -89,7 +89,7 @@
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/9/90/Sleeping_Dogs_-_Square_Enix_video_game_cover.jpg"
         },
         {
-            "game_name": "Arkham Knight",
+            "game_name": "Batman: Arkham Knight",
             "game_id": "12",
             "developer": "Rocksteady Studios",
             "release_date": "June 23, 2015",
@@ -191,6 +191,54 @@
             "release_date": "December 7, 2018",
             "game_description": "Super Smash Bros. Ultimate is a 2018 crossover fighting game developed by Bandai Namco Studios and Sora Ltd. and published by Nintendo for the Nintendo Switch. It is the fifth installment in the Super Smash Bros. series, succeeding Super Smash Bros. for Nintendo 3DS and Wii U (2014). The game follows the series' traditional style of gameplay, in which players control one of the various characters and use attacks to weaken their opponents and knock them out of an arena. It features a wide variety of game modes, including a single-player campaign and multiplayer versus modes. Ultimate features 89 playable fighters, including all characters from previous Super Smash Bros. games as well as newcomers. The roster ranges from Nintendo characters to those from third-party franchises. Planning for the game had begun by December 2015, with full development starting after the completion of 3DS/Wii U's downloadable content (DLC). Series creator and director Masahiro Sakurai returned along with Bandai Namco Studios and Sora, the studios that developed 3DS/Wii U, with their return speeding up the preparation process. ",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/5/50/Super_Smash_Bros._Ultimate.jpg"
+        },
+        {
+            "game_name": "Lego Marvel Super Heroes",
+            "game_id": "25",
+            "developer": "Traveller's Tales (TT)",
+            "release_date": "October 22, 2013",
+            "game_description": "Lego Marvel Super Heroes is a 2013 Lego-themed action-adventure video game developed by Traveller's Tales and published by Warner Bros. Interactive Entertainment for the PlayStation 3, Xbox 360, Wii U, PlayStation 4, Xbox One, Nintendo Switch, and Microsoft Windows and by Feral Interactive for OS X. The game features gameplay similar to other Lego titles, such as Lego Star Wars: The Complete Saga and Lego Batman 2: DC Super Heroes, alternating between various action-adventure sequences and puzzle-solving scenarios. The handheld version of the game by TT Fusion was released under the title Lego Marvel Super Heroes: Universe in Peril for iOS, Android, Nintendo DS, Nintendo 3DS, and PlayStation Vita. A Nintendo Switch version was released on October 8, 2021. The game's storyline sees various heroes from the Marvel Universe joining forces to foil the schemes of Doctor Doom and Loki, who have also recruited a number of villains to aid them and seek to conquer the Earth using the Doom Ray of Doom, a device built from shards of the Silver Surfer's board called 'Cosmic Bricks'. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/a/a7/Lego-Marvel-cover.jpg"
+        },
+        {
+            "game_name": "Bioshock",
+            "game_id": "26",
+            "developer": "2K",
+            "release_date": "August 21, 2007",
+            "game_description": "BioShock is a 2007 first-person shooter video game developed by 2K Boston (later Irrational Games) and 2K Australia, and published by 2K. The first game in the BioShock series, it was released for Microsoft Windows and Xbox 360 platforms in August 2007; a PlayStation 3 port by Irrational, 2K Marin, 2K Australia and Digital Extremes was released in October 2008. The game follows player character Jack, who discovers the underwater city of Rapture, built by business magnate Andrew Ryan to be an isolated utopia. The discovery of ADAM, a genetic material which grants superhuman powers, initiated the city's turbulent decline. Jack attempts to escape Rapture, fighting its mutated and mechanical denizens, while engaging with the few sane survivors left and learning of the city's past. The player can defeat foes in several ways. BioShock's concept was developed by Irrational's creative lead, Ken Levine, and incorporates ideas by 20th century dystopian and utopianthinkers such as Ayn Rand, George Orwell, and Aldous Huxley, as well as historical figures such as John D. Rockefeller Jr. and Walt Disney. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/6/6d/BioShock_cover.jpg"
+        },
+        {
+            "game_name": "Dying Light",
+            "game_id": "27",
+            "developer": "Techland",
+            "release_date": "January 27, 2015",
+            "game_description": "Dying Light is a 2015 survival horror video game developed by Techland and published by Warner Bros. Interactive Entertainment. The game's story follows undercover agent Kyle Crane who is sent to infiltrate a quarantine zone in a fictional Middle Eastern city called Harran. It features an enemy-infested, open world city with a dynamic day–night cycle, in which zombies are slow and clumsy during daytime and extremely aggressive at night. The gameplay is focused on weapons-based combat and parkour, allowing players to choose fight or flight when presented with dangers. The game also features an asymmetrical multiplayer mode (originally set to be a pre-order bonus), and a four-player co-operative multiplayer mode. The development of the game began in early 2012, after the team completed the development of Dead Island. The game's parkour system emphasizes natural movement, and David Belle, the pioneer of parkour, was invited to serve as a consultant for the game. To implement that, Techland had to abandon most of the story elements and construct them again from scratch. ",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/c/c0/Dying_Light_cover.jpg"
+        },
+        {
+            "game_name": "Skyrim",
+            "game_id": "28",
+            "developer": "Bethesda",
+            "release_date": "November 11, 2011",
+            "game_description": "The Elder Scrolls V: Skyrim is a 2011 action role-playing game developed by Bethesda Game Studios and published by Bethesda Softworks. It is the fifth main installment in The Elder Scrolls series, following The Elder Scrolls IV: Oblivion (2006), and was released worldwide for Windows, PlayStation 3, and Xbox 360 on November 11, 2011. Skyrim was developed using the Creation Engine, which was rebuilt specifically for the game. The team opted for a unique and more diverse open world than Oblivion's Imperial Province of Cyrodiil, which game director and executive producer Todd Howard considered less interesting by comparison. The game is set 200 years after the events of Oblivion and takes place in Skyrim, the northernmost province of Tamriel, a continent on the planet Nirn. Its main story focuses on the player character, the Dragonborn, on their quest to defeat Alduin the World-Eater, a dragon prophesied to destroy the world. Throughout the game, the player completes quests and develops the character by improving skills.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png"
+        },
+        {
+            "game_name": "Cyberpunk 2077",
+            "game_id": "29",
+            "developer": "CD Projekt Red",
+            "release_date": "December 10, 2020",
+            "game_description": "Cyberpunk 2077 is a 2020 action role-playing game developed by CD Projekt Red and published by CD Projekt. Based on Mike Pondsmith's Cyberpunk tabletop game series, the plot is set in the fictional metropolis of Night City, California, within the dystopian Cyberpunk universe. The player assumes the role of V (voiced by Gavin Drea or Cherami Leigh), a mercenary who gets reluctantly imbued with a cybernetic 'bio-chip' containing an engram of legendary rockstar and terrorist Johnny Silverhand (voiced by Keanu Reeves). As Johnny's consciousness begins overwriting V's own, the two must work together to separate from each other and save V's life. The game's development began following the release of The Witcher 3: Wild Hunt – Blood and Wine (2016). The game was developed by a team of around 500 people using the REDengine 4 game engine. CD Projekt launched a new division in Wrocław, Poland, and partnered with Digital Scapes, Nvidia, QLOC, and Jali Research to aid the production. Cyberpunk creator Mike Pondsmith was a consultant. The original score was led by Marcin Przybyłowicz, and featured the contributions of several licensed artists.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg"
+        },
+        {
+            "game_name": "Death Stranding",
+            "game_id": "30",
+            "developer": "Kojima Productions",
+            "release_date": "November 8, 2019",
+            "game_description": "Death Stranding is a 2019 action-adventure game developed by Kojima Productions and originally published by Sony Interactive Entertainment. It is the first game from director Hideo Kojima and Kojima Productions after their split from Konami in 2015. It was first released for PlayStation 4 in November 2019, followed by a Windowsport in July 2020. A director's cut was released for PlayStation 5 in September 2021, followed by releases for Windows in March 2022, iOS, iPadOS and macOS in January 2024, and Amazon Luna and Xbox Series X/S in November 2024. The game is set in the United States following a cataclysmic event which caused destructive creatures to begin roaming the Earth. The player controls Sam Porter Bridges (Norman Reedus), a courier tasked with delivering supplies to isolated colonies and reconnecting them via a wireless communications network. Alongside Reedus, the game features actors Mads Mikkelsen, Léa Seydoux, Margaret Qualley, Troy Baker, Tommie Earl Jenkins, and Lindsay Wagner, in addition to the likenesses of film directors Guillermo del Toro and Nicolas Winding Refn, as supporting characters.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/2/22/Death_Stranding.jpg"
         }
     ]
 }
