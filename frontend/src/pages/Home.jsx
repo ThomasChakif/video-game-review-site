@@ -78,7 +78,7 @@ function Home() {
             });
             setGameData(sortedGames)
         })
-    })
+    }, []) //added empty dependency array to prevent infinite renders (button propagation problem fix)
 
     //get the average for each game to display alongside title
     useEffect(() => {
