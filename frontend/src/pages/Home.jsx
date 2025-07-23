@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react"
 import Grid from "@mui/material/Grid";
+import Box from '@mui/material/Box';
+import TextField from "@mui/material/TextField";
 import { useNavigate } from "react-router-dom";
 import '../styles/Home.css'
 import AppHeader from "../components/AppHeader";
 import api from "../api"
-import Box from '@mui/material/Box';
+
 
 function Home() {
 
     const [gameData, setGameData] = useState([])
     const [averages, setAverages] = useState({})
+    const [filteredGames, setFilteredGames] = useState([])
+    const [searchTerm, setSearchTerm] = useState("")
     const navigate = useNavigate()
 
     const getRatingColor = (average) => {
@@ -85,16 +89,63 @@ function Home() {
         }
     }, [gameData])
 
+    //use effect to handle searching for game titles
+    useEffect(() => {
+        if(searchTerm.trim() === ""){ //nothing in the search bar, show all games
+            setFilteredGames(gameData)
+        }else{
+            const filtered = gameData.filter(game =>  //filter games based off if the game name contains the search term
+                game.game_name.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+            setFilteredGames(filtered)
+        }
+    }, [searchTerm, gameData]) //useEffect activates if it notices a change in either searchTerm (i.e., a new input in the search bar) or gameData
+
+    //handle changes in the search bar
+    const handleSearchChange = (event) => {
+        setSearchTerm(event.target.value)
+    }
 
     return <div className='page'>
         <AppHeader />
         <h1 className='home-header'>Click on any of the games below to be taken to their page!</h1>
+
+        {/* search bar */}
+        <Box sx={{
+            display: 'flex', 
+            justifyContent: 'center', 
+            marginBottom: '2rem',
+            paddingX: '2rem'
+        }}>
+            <TextField
+                type='search'
+                placeholder = 'Search for a game...'
+                value={searchTerm}
+                onChange={handleSearchChange} // on change, handle updating the value in searchTerm
+                sx={{
+                    width: '100%',
+                    maxWidth: '500px',
+                    '& .MuiOutlinedInput-root': {
+                        backgroundColor: 'white',
+                        borderRadius: '25px',
+                    },
+                    '& input[type="search"]::-webkit-search-cancel-button': {
+                        display: 'none',
+                    },
+                    '& input[type="search"]::-webkit-search-decoration': {
+                        display: 'none',
+                    }
+                }}
+                
+            >
+            </TextField>
+        </Box>
         <Grid container direction = "row" spacing={1}
             sx={{
                 justifyContent: "center",
                 alignItems: "center"
             }}>
-            {gameData.map((game) => (
+            {filteredGames.map((game) => (
                 <div>
                     <p className = 'game-titles'>{game.game_name}</p>
                     <Grid className = 'game-card' item key={game.game_id} 
