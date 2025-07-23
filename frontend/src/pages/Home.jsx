@@ -77,6 +77,7 @@ function Home() {
                 return 0;
             });
             setGameData(sortedGames)
+            setFilteredGames(sortedGames)
         })
     }, []) //added empty dependency array to prevent infinite renders (button propagation problem fix)
 
@@ -140,6 +141,40 @@ function Home() {
             >
             </TextField>
         </Box>
+        {/* display number of games found */}
+        {searchTerm && (
+            <Box sx={{ textAlign: 'center', marginBottom: '0.5rem' }}>
+                <p className='game-rating' style={{ color: 'white', fontSize: '1.5rem' }}>
+                    {filteredGames.length} game{filteredGames.length !== 1 ? 's' : ''} found
+                </p>
+            </Box>
+        )}
+        {/* display message if no games are found to prevent page shrinking */}
+        {/* only display if there is something in the search bar and no results match the search term */}
+        {searchTerm && filteredGames.length === 0 && (
+            <Box sx={{ 
+                textAlign: 'center', 
+                minHeight: '500px', //add minimum height to prevent page shrinking
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}>
+                <p className='game-rating' style={{ 
+                    color: 'white', 
+                    fontSize: '2rem', 
+                    marginBottom: '1rem' 
+                }}>
+                    No games found matching "{searchTerm}"
+                </p>
+                <p className='game-rating' style={{ 
+                    color: 'white', 
+                    fontSize: '1.5rem' 
+                }}>
+                    Try searching for a different game title
+                </p>
+            </Box>
+        )}
         <Grid container direction = "row" spacing={1}
             sx={{
                 justifyContent: "center",
@@ -178,7 +213,7 @@ function Home() {
                         justifyContent: "center",
                         color: "white",
                         fontWeight: "bold",
-                        fontSize: "2rem",
+                        fontSize: "1.5rem",
                         zIndex: 1 // Ensure it appears above background
                         }}
                     >
