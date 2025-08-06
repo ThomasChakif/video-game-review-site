@@ -113,7 +113,7 @@
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg"
         },
         {
-            "game_name": "Injustice: Gods Among Us",
+            "game_name": "Injustice",
             "game_id": "15",
             "developer": "NetherRealm Sudios",
             "release_date": "April 16, 2013",
@@ -173,7 +173,7 @@
             "game_id": "22",
             "developer": "Nintendo EPD",
             "release_date": "March 3, 2017",
-            "game_description": "he Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed and published by Nintendo. Set at the end of the Zelda timeline, the player controls an amnesiac Link as he sets out to save Princess Zelda and prevent Calamity Ganon from destroying the world. Players explore the open world of Hyrule while they collect items and complete objectives such as puzzles and side quests. Breath of the Wild's world is unstructured and encourages exploration and experimentation; the story can be completed in a nonlinear fashion. Initially planned as a 2015 Wii U exclusive, Breath of the Wild released on March 3, 2017, for the Wii U and Nintendo Switch; an enhanced edition released on June 5, 2025 for Nintendo Switch 2. Development lasted five years, commencing immediately after the release of The Legend of Zelda: Skyward Sword in 2011. Led by director Hidemaro Fujibayashi and producer Eiji Aonuma, Nintendo sought to rethink Zelda's conventions and introduced elements such as detailed chemistry and physics engines. ",
+            "game_description": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed and published by Nintendo. Set at the end of the Zelda timeline, the player controls an amnesiac Link as he sets out to save Princess Zelda and prevent Calamity Ganon from destroying the world. Players explore the open world of Hyrule while they collect items and complete objectives such as puzzles and side quests. Breath of the Wild's world is unstructured and encourages exploration and experimentation; the story can be completed in a nonlinear fashion. Initially planned as a 2015 Wii U exclusive, Breath of the Wild released on March 3, 2017, for the Wii U and Nintendo Switch; an enhanced edition released on June 5, 2025 for Nintendo Switch 2. Development lasted five years, commencing immediately after the release of The Legend of Zelda: Skyward Sword in 2011. Led by director Hidemaro Fujibayashi and producer Eiji Aonuma, Nintendo sought to rethink Zelda's conventions and introduced elements such as detailed chemistry and physics engines. ",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
         },
         {
@@ -185,7 +185,7 @@
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg"
         },
         {
-            "game_name": "Super Smash Bros. Ultimate",
+            "game_name": "SSB Ultimate",
             "game_id": "24",
             "developer": "Bandai Namco",
             "release_date": "December 7, 2018",
@@ -239,6 +239,30 @@
             "release_date": "November 8, 2019",
             "game_description": "Death Stranding is a 2019 action-adventure game developed by Kojima Productions and originally published by Sony Interactive Entertainment. It is the first game from director Hideo Kojima and Kojima Productions after their split from Konami in 2015. It was first released for PlayStation 4 in November 2019, followed by a Windowsport in July 2020. A director's cut was released for PlayStation 5 in September 2021, followed by releases for Windows in March 2022, iOS, iPadOS and macOS in January 2024, and Amazon Luna and Xbox Series X/S in November 2024. The game is set in the United States following a cataclysmic event which caused destructive creatures to begin roaming the Earth. The player controls Sam Porter Bridges (Norman Reedus), a courier tasked with delivering supplies to isolated colonies and reconnecting them via a wireless communications network. Alongside Reedus, the game features actors Mads Mikkelsen, Léa Seydoux, Margaret Qualley, Troy Baker, Tommie Earl Jenkins, and Lindsay Wagner, in addition to the likenesses of film directors Guillermo del Toro and Nicolas Winding Refn, as supporting characters.",
             "game_cover": "https://upload.wikimedia.org/wikipedia/en/2/22/Death_Stranding.jpg"
+        },
+        {
+            "game_name": "Palworld",
+            "game_id": "31",
+            "developer": "Pocketpair",
+            "release_date": "January 19, 2024",
+            "game_description": "Palworld is an upcoming action-adventure, survival, and monster-taming game created and published by Japanese developer Pocketpair. The game is set in an open world populated with animal-like creatures called 'Pals', which players can battle and capture to use for base building, traversal, and combat. Players may also assign the Pals to bases where they will automatically complete tasks for the player. Palworld can be played either solo or online with up to 32 players on one server. It was announced in 2021 and launched through early access for Windows, Xbox One, and Xbox Series X/S in January 2024, and for the PlayStation 5 in September 2024. The game's comedic premise, which involves using firearms and equipping Pals with them, has earned it the nickname 'Pokémon with guns'. Other elements, such as using Pals for food or as manual labor in mines and factories, have also garnered attention. It was generally well received, with praise for its gameplay, content, and satirical premise, but criticism for its reliance on shock humor and use of unoriginal designs and mechanics.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/f/fb/Palworld_Steam_artwork.jpg"
+        },
+        {
+            "game_name": "Pokemon Emerald",
+            "game_id": "32",
+            "developer": "Game Freak",
+            "release_date": "September 16, 2004",
+            "game_description": "Pokémon Emerald Version is a 2004 role-playing video game developed by Game Freak and published by The Pokémon Company and Nintendo for the Game Boy Advance. It was first released in Japan in 2004, and was later released internationally in 2005. It is the fifth version, after both Pokémon Ruby and Sapphire and Pokémon FireRed and LeafGreen, and is the final game of the third generation of the Pokémon video game series. The gameplay and controls are largely the same as the previous games in the series; players control a Pokémon trainer from an overhead perspective. As with Ruby and Sapphire, the player's general goal is to explore the Hoenn region and conquer a series of eight Pokémon Gyms in order to challenge the Elite Four and the Hoenn Pokémon League Champion, while the main subplot is to defeat two criminal organizations attempting to harness a legendary Pokémon's power for their own goals. Along with Pokémon that debuted in Ruby and Sapphire, the game incorporates Pokémon from Pokémon Gold and Silver not featured in Ruby and Sapphire.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/en/f/f7/PokemonEmeraldBox.jpg"
+        },
+        {
+            "game_name": "Pac-Man",
+            "game_id": "33",
+            "developer": "Namco",
+            "release_date": "May 22, 1980",
+            "game_description": "Pac-Man, originally called Puck Man in Japan, is a 1980 maze video game developed and published by Namco for arcades. In North America, the game was released by Midway Manufacturing as part of its licensing agreement with Namco America. The player controls Pac-Man, who must eat all the dots inside an enclosed maze while avoiding four colored ghosts. Eating large flashing dots called ‘Power Pellets’ causes the ghosts to temporarily turn blue, allowing Pac-Man to also eat the ghosts for bonus points. Game development began in early 1979, led by Toru Iwatani with a nine-man team. Iwatani wanted to create a game that could appeal to women as well as men, because most video games of the time had themes that appealed to traditionally masculine interests, such as war or sports. Although the inspiration for the Pac-Man character was the image of a pizza with a slice removed, Iwatani has said he rounded out the Japanese character for mouth, kuchi. The in-game characters were made to be cute and colorful to appeal to younger players.",
+            "game_cover": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Pac-Man_gameplay_%281x_pixel-perfect_recreation%29.png"
         }
     ]
 }
